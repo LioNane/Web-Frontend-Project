@@ -3,67 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>One Piece Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img class="me-2" src="images/logo.png" alt="One Piece logo" height="45"></img>
-                <span>Wiki</span>
-            </a>
+            <a class="navbar-brand fw-bold" href="index.html">🏴‍☠️ One Piece Wiki</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="alabasta.html">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="register.html">Register</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
                 </ul>
-                <form class="d-flex ms-3"">
-                    <input class="form-control me-2 form-control-sm" type="search" placeholder="Search...">
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2 form-control-sm" type="search" placeholder="Поиск...">
                 </form>
             </div>
         </div>
     </nav>
-    </header>
+
     <main class="container mt-4 mb-5">
-        <div class="carousel slide mb-5 shadow-sm rounded overflow-hidden" data-bs-ride="carousel" id="alabastaCarousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#alabastaCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#alabastaCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#alabastaCarousel" data-bs-slide-to="2"></button>
-            </div>
+        
+        <div id="alabastaCarousel" class="carousel slide mb-5 shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/alabasta.jpg" class="d-block w-100 carousel-img" alt="Alabasta Desert">
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                        <h5>Kingdom of Sands</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/crocodile.jpg" class="d-block w-100 carousel-img" alt="Alubarna">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/vivi.jpg" class="d-block w-100 carousel-img" alt="Final Battle">
+                    <img src="images/alabasta.jpg" class="d-block w-100 carousel-img" alt="Пустыня Алабасты" style="height: 400px; object-fit: cover;">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#alabastaCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#alabastaCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
         </div>
 
         <div class="row">
@@ -73,75 +45,76 @@
                 <p class="mb-4 lh-lg">The Alabasta Saga is the second story arc of the "One Piece" manga and anime. It chronicles the Straw Hat Pirates' arrival on the Grand Line and their journey alongside Princess Nefertari Vivi to prevent a civil war.</p>
                 
                 <h2 class="h4 mt-5 mb-4">Saga's arcs</h2>
-
-            <div class="custom-accordion mb-5" id="sagasAccordion">
                 
-                <div class="accordion-item bg-white shadow-sm mb-3 rounded border">
-                    <div class="accordion-header d-flex justify-content-between align-items-center p-3" style="cursor: pointer;">
-                        <h5 class="m-0 text-primary fw-bold">Arc Whiskey-Pick</h5>
-                        <span class="fs-5 toggle-icon text-muted">+</span>
-                    </div>
-                    <div class="accordion-content" style="display: none;">
-                        <div class="p-3 border-top text-muted small">
-                            Meeting the Baroque Works bounty hunters and the revelation of Vivi's true identity.
-                            <div class="mt-3">
-                                <a href="#" class="btn btn-outline-primary w-100 btn-sm">Read article</a>
+                <div class="custom-accordion mb-5" id="sagasAccordion">
+                    
+                    <div class="accordion-item bg-white shadow-sm mb-3 rounded border">
+                        <div class="accordion-header d-flex justify-content-between align-items-center p-3" style="cursor: pointer;">
+                            <h5 class="m-0 text-primary fw-bold">Arc Whiskey-Pick</h5>
+                            <span class="fs-5 toggle-icon text-muted">+</span>
+                        </div>
+                        <div class="accordion-content" style="display: none;">
+                            <div class="p-3 border-top text-muted small">
+                                Meeting the Baroque Works bounty hunters and the revelation of Vivi's true identity.
+                                <div class="mt-3">
+                                    <a href="#" class="btn btn-outline-primary w-100 btn-sm">Read article</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion-item bg-white shadow-sm mb-3 rounded border">
-                    <div class="accordion-header d-flex justify-content-between align-items-center p-3" style="cursor: pointer;">
-                        <h5 class="m-0 text-primary fw-bold">Arc Little-Garden</h5>
-                        <span class="fs-5 toggle-icon text-muted">+</span>
-                    </div>
-                    <div class="accordion-content" style="display: none;">
-                        <div class="p-3 border-top text-muted small">
-                            A prehistoric island where the crew encounters two battling giants, Dorry and Brogy.
-                            <div class="mt-3">
-                                <a href="#" class="btn btn-outline-primary w-100 btn-sm">Read article</a>
+                    <div class="accordion-item bg-white shadow-sm mb-3 rounded border">
+                        <div class="accordion-header d-flex justify-content-between align-items-center p-3" style="cursor: pointer;">
+                            <h5 class="m-0 text-primary fw-bold">Arc Little-Garden</h5>
+                            <span class="fs-5 toggle-icon text-muted">+</span>
+                        </div>
+                        <div class="accordion-content" style="display: none;">
+                            <div class="p-3 border-top text-muted small">
+                                A prehistoric island where the crew encounters two battling giants, Dorry and Brogy.
+                                <div class="mt-3">
+                                    <a href="#" class="btn btn-outline-primary w-100 btn-sm">Read article</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion-item bg-white shadow-sm mb-3 rounded border">
-                    <div class="accordion-header d-flex justify-content-between align-items-center p-3" style="cursor: pointer;">
-                        <h5 class="m-0 text-primary fw-bold">Arc Dram-Island</h5>
-                        <span class="fs-5 toggle-icon text-muted">+</span>
-                    </div>
-                    <div class="accordion-content" style="display: none;">
-                        <div class="p-3 border-top text-muted small">
-                            Winter Island. Tony Tony Chopper, a doctor, joins the Straw Hat Pirates.
-                            <div class="mt-3">
-                                <a href="#" class="btn btn-outline-primary w-100 btn-sm">Read article</a>
+                    <div class="accordion-item bg-white shadow-sm mb-3 rounded border">
+                        <div class="accordion-header d-flex justify-content-between align-items-center p-3" style="cursor: pointer;">
+                            <h5 class="m-0 text-primary fw-bold">Arc Dram-Island</h5>
+                            <span class="fs-5 toggle-icon text-muted">+</span>
+                        </div>
+                        <div class="accordion-content" style="display: none;">
+                            <div class="p-3 border-top text-muted small">
+                                Winter Island. Tony Tony Chopper, a doctor, joins the Straw Hat Pirates.
+                                <div class="mt-3">
+                                    <a href="#" class="btn btn-outline-primary w-100 btn-sm">Read article</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="accordion-item bg-white shadow-sm mb-3 rounded border">
-                    <div class="accordion-header d-flex justify-content-between align-items-center p-3" style="cursor: pointer;">
-                        <h5 class="m-0 text-primary fw-bold">Arc Alabasta</h5>
-                        <span class="fs-5 toggle-icon text-muted">+</span>
-                    </div>
-                    <div class="accordion-content" style="display: none;">
-                        <div class="p-3 border-top text-muted small">
-                            The climax of the saga. A massive battle against Crocodile in the desert kingdom.
-                            <div class="mt-3">
-                                <a href="alabasta.html" class="btn btn-primary w-100 btn-sm">Read article</a>
+                    <div class="accordion-item bg-white shadow-sm mb-3 rounded border">
+                        <div class="accordion-header d-flex justify-content-between align-items-center p-3" style="cursor: pointer;">
+                            <h5 class="m-0 text-primary fw-bold">Arc Alabasta</h5>
+                            <span class="fs-5 toggle-icon text-muted">+</span>
+                        </div>
+                        <div class="accordion-content" style="display: none;">
+                            <div class="p-3 border-top text-muted small">
+                                The climax of the saga. A massive battle against Crocodile in the desert kingdom.
+                                <div class="mt-3">
+                                    <a href="alabasta.html" class="btn btn-primary w-100 btn-sm">Read article</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
             <div class="col-lg-4">
                 <aside class="card shadow-sm mb-4 border-0 bg-white">
                     <div class="p-2">
-                        <img src="images/alabasta.jpg" class="card-img-top rounded" alt="Постер саги">
+                        <img src="images/crocodile.jpg" class="card-img-top rounded" alt="Постер саги">
                     </div>
                     <div class="card-body pt-2">
                         <h3 class="card-title h5 text-center mb-3 fw-bold">Alabasta Saga</h3>
@@ -149,7 +122,7 @@
                             <li class="list-group-item"><strong>Manga:</strong> Chapters 101 - 217</li>
                             <li class="list-group-item"><strong>Anime:</strong> Episodes 62 - 135</li>
                             <li class="list-group-item"><strong>Antagonist:</strong> Crocodile</li>
-                            <li class="list-group-item"><strong>New members:</strong> Chopper, Robin</li>
+                            <li class="list-group-item"><strong>New Member:</strong> Chopper</li>
                         </ul>
                     </div>
                 </aside>
@@ -157,11 +130,11 @@
             
         </div>
     </main>
-    <footer class="bg-dark text-center py-4 mt-5 text-light">
-        <p class="mb-0 small">&copy; 2026 One Piece Fandom Wiki</p>
+
+    <footer class="bg-dark text-center py-4 mt-auto text-light">
+        <p class="mb-0 small">&copy; 2026 One Piece Fandom Wiki.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
